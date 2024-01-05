@@ -1,7 +1,9 @@
-use super::{
-    fractal_descriptor::FractalDescriptor, range::Range, resolution::Resolution, u8_data::U8Data,
-};
 use serde::{Deserialize, Serialize};
+
+use crate::models::{
+    fractals::fractal_descriptor::FractalDescriptor, range::Range, resolution::Resolution,
+    u8_data::U8Data,
+};
 
 #[derive(Serialize, Deserialize, Debug, Clone)]
 pub struct FragmentTask {

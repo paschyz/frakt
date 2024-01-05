@@ -1,6 +1,8 @@
-use super::{pixel_data::PixelData, range::Range, resolution::Resolution, u8_data::U8Data};
-
 use serde::{Deserialize, Serialize};
+
+use crate::models::{
+    pixel::pixel_data::PixelData, range::Range, resolution::Resolution, u8_data::U8Data,
+};
 
 #[derive(Serialize, Deserialize, Debug, Clone)]
 

@@ -3,6 +3,14 @@
 version = 3
 
 [[package]]
+name = "complex"
+version = "0.1.0"
+dependencies = [
+ "serde",
+ "serde_json",
+]
+
+[[package]]
 name = "itoa"
 version = "1.0.10"
 source = "registry+https://github.com/rust-lang/crates.io-index"
@@ -76,6 +84,7 @@ dependencies = [
 name = "shared"
 version = "0.1.0"
 dependencies = [
+ "complex",
  "serde",
  "serde_json",
 ]

@@ -1,6 +1,5 @@
+use complex::Complex;
 use serde::{Deserialize, Serialize};
-
-use crate::models::complex::Complex;
 
 #[derive(Serialize, Deserialize, Debug, Clone)]
 pub struct JuliaDescriptor {
