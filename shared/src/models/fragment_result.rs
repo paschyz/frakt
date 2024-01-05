@@ -1,6 +1,8 @@
 use super::{pixel_data::PixelData, range::Range, resolution::Resolution, u8_data::U8Data};
 
-#[derive(Debug, Clone)]
+use serde::{Deserialize, Serialize};
+
+#[derive(Serialize, Deserialize, Debug, Clone)]
 
 pub struct FragmentResult {
     pub id: U8Data,

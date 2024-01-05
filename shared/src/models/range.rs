@@ -1,6 +1,7 @@
 use super::point::Point;
+use serde::{Deserialize, Serialize};
 
-#[derive(Debug, Clone)]
+#[derive(Serialize, Deserialize, Debug, Clone)]
 pub struct Range {
     pub min: Point,
     pub max: Point,
